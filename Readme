@@ -1,0 +1,10 @@
+// ! UnSync Taking More Space On Ram Bc UR Make More Than One Fuction At The Same Time
+
+// ? npm init -y
+// * to start using npm with the default settings
+
+// ! gitignore github will not upload what u type in is file (we using it for modules)
+// ? if u download the projet without the modules and want to get what u need
+// * " npm install " to download all the dependencies
+
+// ! nodemon Dev Tool To make the project auto run

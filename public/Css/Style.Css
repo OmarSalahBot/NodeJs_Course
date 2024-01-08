@@ -1,0 +1,219 @@
+/*Global */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+}
+body {
+    font-family: 'Geologica', sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* Header */
+header {
+    background-color: white;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    position: relative;
+}
+header .container .Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #ce0033;
+    height: 65px;
+    transition: 0.5s;
+}
+header .container .nav {
+    display: flex;
+    padding: 0px;
+}
+header .container .nav li  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    padding: 0px 20px;
+    color: #000;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+header .container .Login {
+    display: block;
+    color: #ce0033;
+    height: fit-content;
+    margin-top:16px;
+    margin-left: 10px;
+    padding: 2px 22px;
+    font-size: 20px;
+    border: #ce0033 solid 2px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+header .container .Logo:hover {
+    scale: 1.2;
+}
+header .Login:hover{
+    scale: 1.2;
+}
+
+header .nav li a:hover {
+    color: #ce0033;
+    scale: 1.2;
+}
+@media (max-width:768px) {
+    header .container .Logo{
+        width: 100%;
+        font-size: 35px;
+        height: 45px;
+    }
+    header .container .nav li a {
+        font-size: 12px;
+        padding: 0px 10px;
+        height: 40px;
+    }
+    header .nav {
+        margin: auto;
+    }
+    header .container .Login{
+        font-size: 14px;
+        margin-top: 7px;
+    }
+}
+/* Landing */
+.landing {
+    position: relative;
+    margin-bottom: 100px;
+}
+.landing .container {
+    min-height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.landing h3 {
+    font-size: 40px;
+}
+.landing p {
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    width: 65%;
+    line-height: 1.3;
+    text-align: center;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ce0033;
+    z-index: -1;
+    transform: skewY(-5deg);
+}
+@media (max-width:768px) {
+    .landing .container h3{
+        font-size: 25px;
+    }
+    .landing .container p {
+        font-size: 14px;
+        width: 90%;
+    }
+}
+/* Download */
+.Download{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.Download h1{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 10px 20px;
+    border: #000 solid 4px;
+    transition: 0.4s;
+}
+.Download h1::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    background-color: #ce0033;
+    transition: 0.3s;
+}
+.Download h1:hover::before{
+    width: 101%;
+    height: 101%;
+}
+.Download h1:hover{
+    border-color: #ce0033;
+    color: white;
+}
+.Download .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:30px;
+}
+.Download .container .box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Download .container i {
+    font-size: 120px;
+    color: #ce0033;
+    padding-bottom: 20px;
+}
+.Download .container a{
+    color: black;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 10px 20px;
+    width: fit-content;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.Download .container a:hover{
+    background-color: #ce0033;
+    border-color: #ce0033;
+    color: white;
+    transform: scale(1.1);
+}
